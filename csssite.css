@@ -1,0 +1,173 @@
+   html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+   }
+    
+    .CarsPhotoText {
+      position:  absolute;
+      right: 105px;
+      top: 55%;
+   }
+
+   .PochtaTexth2 {
+      position: absolute;
+      bottom: 10px;
+      padding-left: 25px;
+   }
+
+   .Pochtaspa {
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      font-weight: normal;
+      font-size: 125%;
+      background: rgba(0, 0, 0, 0.7);
+   }
+
+   .block:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: -3px;
+      width: 0;
+      height: 2px; /* Высота линии */
+      background-color: blue; /* Цвет подчеркивания при исчезании линии*/
+      transition: width 1s; /* Время эффекта */
+  }
+
+  .block:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: red; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+  }
+
+  .Ryzen {
+   position: absolute;
+   text-align: left;
+   left: 105px;
+   top: 55%;
+  }
+  
+  .Ryzen-cpuz {
+   width: 350px;
+   height: 350px;
+  }
+
+  .RyzenText {
+   position: relative;
+   left: 103%;
+   bottom: 365px;
+   font-size: 125%;  
+   font-family: Arial, Helvetica, sans-serif;
+  }
+
+.block1 {
+   position: fixed;
+   top: 3%;
+   left: 50%;
+   transform:translate(-50%, -50%);
+}
+
+.MainTextNav { 
+   font-size: 115%; 
+   font-family: Helvetica, sans-serif; 
+   color: hsl(240, 34%, 34%);
+   margin-top: 20px;
+  }
+
+  .block {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  margin-right: 55px;
+  }
+
+  .market-links {
+   margin: 0;
+   display: flex;
+   position: absolute;
+   transform: translate(3%, 100px);
+  }
+
+  .market-links ul {
+   list-style-type: none;
+   margin: 0px;
+   display: flex;
+  }
+
+  .market-links a {
+   text-decoration: none;
+   font-size: 125%;
+   color: black;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin-right: 55px;
+   border: 1px solid darkblue;
+   border-radius: 10px;
+   padding-left: 7px;
+   padding-right: 7px;
+   transition: 0.3s;
+  }
+
+  .market-links a:hover {
+   background-color: aqua;
+   transition: 0.3s;
+  }
+
+ @media screen and (max-width: 720px) {
+   .block {
+      font-size: 16px;
+      margin: 13px;
+      }
+
+   .block1 {
+      position: absolute;
+      display: flex;
+      width: 80%;
+      transform: translate(-50%, -55%);
+      }
+
+      .market-links {
+         display: flex;
+         position: absolute;
+      }
+
+      .market-links a {
+         font-size: 16px;
+         margin-left: -70px;
+         padding: 1;
+      }
+      
+      .market-links li {
+         padding-left: 35px;
+         text-align: center;
+      }
+
+      .market-links ul {
+         transform: translate(25%);
+      }
+
+      .Ryzen {
+         position: absolute;
+         height: 350px;
+         transform: translate(-25%, -170%);
+        }
+
+        .RyzenText {
+         font-size: 16px;
+        }
+
+        .CarsPhotoText img {
+         width: 300px;
+        }
+      }
+   
+
+
+  
